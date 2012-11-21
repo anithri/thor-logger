@@ -7,6 +7,9 @@ require 'thor-logger'
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
+# Load fixtures
+load File.join(File.dirname(__FILE__), "fixtures", "vanilla.rb")
+
 RSpec.configure do |config|
   
 end
